@@ -1,0 +1,117 @@
+.home-content {
+  .home-flex-1 {
+    display: flex;
+    min-height: 385px;
+    align-items: center;
+    justify-content: space-evenly;
+    // background-color: blue;
+    .pet-food-image {
+      height: 303px;
+      width: 345px;
+      background-image: url(../images/pet-food.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .home-text {
+      text-align: center;
+      //   margin-right: 150px;a
+      h2 {
+        font-family: AsapReg;
+        font-size: 50px;
+      }
+      p {
+        font-family: AsapReg;
+        font-size: 40px;
+      }
+    }
+  }
+  .home-flex-2 {
+    min-height: 600px;
+    // background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 60px;
+    .home-image-2 {
+      width: 496px;
+      height: 328px;
+      background-image: url(../images/dog-brushing.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .home-text-2 {
+      width: 520px;
+      h2 {
+        font-size: 35px;
+        font-family: AsapReg;
+        margin-bottom: 35px;
+      }
+      p {
+        font-size: 18px;
+        font-family: AsapReg;
+      }
+    }
+
+    .home-image-3 {
+      width: 492px;
+      height: 339px;
+      background-image: url(../../images/pets/cat-2.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .home-text-3 {
+      width: 520px;
+      h2 {
+        font-size: 35px;
+        font-family: AsapReg;
+        margin-bottom: 35px;
+      }
+      p {
+        font-size: 18px;
+        font-family: AsapReg;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1060px) {
+  .home-flex-1 {
+    // background-color: red;
+    .home-text {
+      h2 {
+        // background-color: blue;
+        font-size: 35px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 840px) {
+  .home-flex-1 {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .home-flex-2 {
+    flex-direction: column;
+    .home-text-2 {
+      margin-top: 150px;
+    }
+    .home-image-2 {
+      margin-bottom: 200px;
+      margin-top: 50px;
+    }
+
+    .home-image-3 {
+      margin-bottom: 50px;
+    }
+
+    .home-text-3 {
+      margin-bottom: 100px;
+    }
+  }
+}

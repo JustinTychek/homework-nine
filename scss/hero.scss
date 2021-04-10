@@ -1,0 +1,75 @@
+.hero {
+  height: 475px;
+
+  nav {
+    height: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px white solid;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 20px;
+      font-family: AsapReg;
+    }
+  }
+
+  .hero-content {
+    height: 350px;
+    /* background-color: rgba(100, 100, 100, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: $white;
+    font-family: AsapReg;
+    text-transform: uppercase;
+  }
+}
+
+.home-hero-image {
+  background-image: linear-gradient(to right, $black-overlay, $black-overlay),
+    url(../images/heros/home-hero.jpg);
+  background-position: top;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.pets-hero-image {
+  background-image: linear-gradient(to right, $black-overlay, $black-overlay),
+    url(../images/heros/pets-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.salon-hero-image {
+  background-image: linear-gradient(to right, $black-overlay, $black-overlay),
+    url(../images/heros/salon-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.about-hero-image {
+  background-image: linear-gradient(to right, $black-overlay, $black-overlay),
+    url(../images/heros/about-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 870px) {
+  .hero {
+    .hero-content {
+      font-size: 35px;
+    }
+  }
+}

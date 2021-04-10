@@ -1,0 +1,19 @@
+.salon-content {
+  max-width: 1071px;
+  margin: 0 auto;
+}
+.salon-content .salon-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.salon-content .salon-flex .category {
+  width: 435px;
+}
+.salon-content .salon-flex .category .grooming-image {
+  background-image: url(../images/dog-grooming.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.salon-content .salon-flex .category h2 {
+  align-content: center;
+}

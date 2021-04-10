@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: AsapReg;
+  src: url(fonts/asap/static/Asap-Regular.ttf);
+}
+.hero {
+  height: 475px;
+}
+.hero nav {
+  height: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px white solid;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: AsapReg;
+}
+.hero .hero-content {
+  height: 350px;
+  /* background-color: rgba(100, 100, 100, 0.5); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  font-family: AsapReg;
+  text-transform: uppercase;
+}
+
+.home-hero-image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/heros/home-hero.jpg);
+  background-position: top;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.pets-hero-image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/heros/pets-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.salon-hero-image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/heros/salon-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.about-hero-image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/heros/about-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 870px) {
+  .hero .hero-content {
+    font-size: 35px;
+  }
+}
+footer {
+  height: 65px;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0px;
+  font-family: AsapReg;
+}
+
+.home-content .home-flex-1 {
+  display: flex;
+  min-height: 385px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home-content .home-flex-1 .pet-food-image {
+  height: 303px;
+  width: 345px;
+  background-image: url(../images/pet-food.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home-content .home-flex-1 .home-text {
+  text-align: center;
+}
+.home-content .home-flex-1 .home-text h2 {
+  font-family: AsapReg;
+  font-size: 50px;
+}
+.home-content .home-flex-1 .home-text p {
+  font-family: AsapReg;
+  font-size: 40px;
+}
+.home-content .home-flex-2 {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+.home-content .home-flex-2 .home-image-2 {
+  width: 496px;
+  height: 328px;
+  background-image: url(../images/dog-brushing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home-content .home-flex-2 .home-text-2 {
+  width: 520px;
+}
+.home-content .home-flex-2 .home-text-2 h2 {
+  font-size: 35px;
+  font-family: AsapReg;
+  margin-bottom: 35px;
+}
+.home-content .home-flex-2 .home-text-2 p {
+  font-size: 18px;
+  font-family: AsapReg;
+}
+.home-content .home-flex-2 .home-image-3 {
+  width: 492px;
+  height: 339px;
+  background-image: url(../../images/pets/cat-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home-content .home-flex-2 .home-text-3 {
+  width: 520px;
+}
+.home-content .home-flex-2 .home-text-3 h2 {
+  font-size: 35px;
+  font-family: AsapReg;
+  margin-bottom: 35px;
+}
+.home-content .home-flex-2 .home-text-3 p {
+  font-size: 18px;
+  font-family: AsapReg;
+}
+
+@media all and (max-width: 1060px) {
+  .home-flex-1 .home-text h2 {
+    font-size: 35px;
+  }
+  .home-flex-1 .home-text p {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 840px) {
+  .home-flex-1 {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 1200px) {
+  .home-flex-2 {
+    flex-direction: column;
+  }
+  .home-flex-2 .home-text-2 {
+    margin-top: 150px;
+  }
+  .home-flex-2 .home-image-2 {
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
+  .home-flex-2 .home-image-3 {
+    margin-bottom: 50px;
+  }
+  .home-flex-2 .home-text-3 {
+    margin-bottom: 100px;
+  }
+}
+.pets-content {
+  margin: 0 auto;
+  min-height: 200px;
+  width: 876px;
+  margin-bottom: 100px;
+}
+.pets-content .pets-flex {
+  margin-top: 85px;
+  min-height: 277px;
+  display: flex;
+  justify-content: space-between;
+}
+.pets-content .pets-flex .pets-image-1 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/dog-1.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-image-2 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/dog-2.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-image-3 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/white-cat.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-image-4 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/cat-2.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-image-5 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/guinea-pig-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-image-6 {
+  width: 345px;
+  height: 277px;
+  background-image: url(../images/pets/guinea-pig-2.jpg);
+  background-position: right;
+  background-size: cover;
+}
+.pets-content .pets-flex .pets-text {
+  width: 491px;
+}
+.pets-content .pets-flex .pets-text h2 {
+  font-family: AsapReg;
+  font-size: 40px;
+}
+.pets-content .pets-flex .pets-text p {
+  font-family: AsapReg;
+  font-size: 18px;
+}
+
+@media all and (max-width: 910px) {
+  .pets-content .pets-flex {
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  .pets-content .pets-flex .pets-text {
+    margin-top: 35px;
+  }
+}
+.salon-content {
+  max-width: 1081px;
+  margin: 0 auto;
+}
+.salon-content .salon-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 115px 20px;
+}
+.salon-content .salon-flex .category {
+  width: 435px;
+}
+.salon-content .salon-flex .category .grooming-image {
+  width: 435px;
+  height: 290px;
+  background-image: url(../images/dog-grooming.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.salon-content .salon-flex .category .shaving-image {
+  width: 435px;
+  height: 290px;
+  background-image: url(../images/shaving-dog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.salon-content .salon-flex .category .bathing-image {
+  width: 435px;
+  height: 290px;
+  background-image: url(../images/dog-bath.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.salon-content .salon-flex .category .blow-drying-image {
+  width: 435px;
+  height: 290px;
+  background-image: url(../images/dog-blowdry.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.salon-content .salon-flex .category h2 {
+  font-size: 40px;
+  font-family: AsapReg;
+  text-align: center;
+  margin-top: 20px;
+}
+.salon-content .salon-flex .category p {
+  font-size: 18px;
+  font-family: AsapReg;
+  margin-left: 7px;
+}
+
+@media all and (max-width: 970px) {
+  .salon-content .salon-flex {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .salon-content .salon-flex .category {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+.about-content .about-flex-1 {
+  display: flex;
+  max-width: 821px;
+  margin: 0 auto;
+  min-height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.about-content .about-flex-1 .owner {
+  width: 261px;
+  height: 261px;
+  border-radius: 50%;
+  background-image: url(../images/owner-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.about-content .about-flex-1 .about-text h2 {
+  font-family: AsapReg;
+  font-size: 40px;
+}
+.about-content .about-flex-1 .about-text p {
+  font-family: AsapReg;
+  font-size: 18px;
+  max-width: 508px;
+}
+.about-content .middle-bar {
+  height: 99px;
+  background-color: #dcdcdc;
+}
+.about-content .about-flex-2 {
+  max-width: 1201px;
+  display: flex;
+  margin: 0 auto;
+  min-height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.about-content .about-flex-2 .our-story {
+  width: 522px;
+  height: 304px;
+  background-image: url(../images/our-story.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.about-content .about-flex-2 .about-text-2 h2 {
+  font-family: AsapReg;
+  font-size: 40px;
+}
+.about-content .about-flex-2 .about-text-2 p {
+  font-family: AsapReg;
+  font-size: 18px;
+  max-width: 557px;
+}
+
+@media all and (max-width: 1240px) {
+  .about-content .about-flex-2 {
+    flex-direction: column;
+  }
+  .about-content .about-flex-2 .about-text-2 {
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+}
+@media all and (max-width: 870px) {
+  .about-flex-1 {
+    flex-direction: column;
+  }
+  .about-flex-1 .about-text {
+    margin-top: 35px;
+  }
+  .about-flex-1 .about-text h2 {
+    text-align: center;
+  }
+  .about-flex-1 .about-text p {
+    margin-left: 50px;
+    margin-right: 25px;
+  }
+}

@@ -1,0 +1,88 @@
+.pets-content {
+  margin: 0 auto;
+  min-height: 200px;
+  width: 876px;
+  //   background-color: purple;
+  margin-bottom: 100px;
+  .pets-flex {
+    margin-top: 85px;
+    min-height: 277px;
+    display: flex;
+    justify-content: space-between;
+
+    .pets-image-1 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/dog-1.jpg);
+      background-position: left;
+      background-size: cover;
+    }
+
+    .pets-image-2 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/dog-2.jpg);
+      background-position: left;
+      background-size: cover;
+    }
+
+    .pets-image-3 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/white-cat.jpg);
+      background-position: left;
+      background-size: cover;
+    }
+
+    .pets-image-4 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/cat-2.jpg);
+      background-position: left;
+      background-size: cover;
+    }
+
+    .pets-image-5 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/guinea-pig-1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .pets-image-6 {
+      width: 345px;
+      height: 277px;
+      background-image: url(../images/pets/guinea-pig-2.jpg);
+      background-position: right;
+      background-size: cover;
+    }
+
+    .pets-text {
+      width: 491px;
+      //   background-color: blue;
+      h2 {
+        font-family: AsapReg;
+        font-size: 40px;
+      }
+
+      p {
+        font-family: AsapReg;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 910px) {
+  .pets-content {
+    .pets-flex {
+      flex-direction: column;
+      margin-left: 45px;
+
+      .pets-text {
+        margin-top: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.salon-content {
+  max-width: 1081px;
+  margin: 0 auto;
+  .salon-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 115px 20px;
+    .category {
+      width: 435px;
+      .grooming-image {
+        width: 435px;
+        height: 290px;
+        background-image: url(../images/dog-grooming.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .shaving-image {
+        width: 435px;
+        height: 290px;
+        background-image: url(../images/shaving-dog.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .bathing-image {
+        width: 435px;
+        height: 290px;
+        background-image: url(../images/dog-bath.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .blow-drying-image {
+        width: 435px;
+        height: 290px;
+        background-image: url(../images/dog-blowdry.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-family: AsapReg;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: AsapReg;
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 970px) {
+  .salon-content {
+    .salon-flex {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      margin-top: 0;
+      .category {
+        margin-top: 70px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
